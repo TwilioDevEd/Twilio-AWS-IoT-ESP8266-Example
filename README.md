@@ -28,11 +28,11 @@ For receiving messages, use API Gateway and pass through form parameters.  Retur
 git clone https://github.com/pkamp3/Twilio-AWS-IoT-ESP8266-Example.git
 </pre>
 
-# Install the following packages with the Arduino Package Manager:
+#### Install the following packages with the Arduino Package Manager:
 * ArduinoJSON by Benoit Blanchon
 * WebSockets by Markus Sattler
 
-# Install the following packages [manually](https://www.arduino.cc/en/guide/libraries#toc5)
+#### Install the following packages [manually](https://www.arduino.cc/en/guide/libraries#toc5)
 * [AWS-MQTT-WebSockets](https://github.com/odelot/aws-mqtt-websockets) by odelot
 * [Eclipse Paho Arduino Client](https://projects.eclipse.org/projects/technology.paho/downloads)
 
