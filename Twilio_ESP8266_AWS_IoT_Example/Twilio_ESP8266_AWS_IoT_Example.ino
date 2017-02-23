@@ -136,7 +136,6 @@ void handle_incoming_message_twilio(MQTT::MessageData& md)
         // Now reverse the body and send it back.
         std::unique_ptr<char []> return_body(new char[161]());
         int16_t r = message_body.length()-1, i = 0;
-        return_body.get()[r+1] = '\0';
 
         // Lambda will limit body size, but we should be defensive anyway.
         // uint16_t is fine because 'maxMQTTpackageSize' limits the total 
@@ -144,6 +143,7 @@ void handle_incoming_message_twilio(MQTT::MessageData& md)
         
         // 160 characters is _index_ 159.
         r = (r < 160) ? r : 159; 
+        return_body.get()[r+1] = '\0';
         while (r >= 0) {
                 return_body.get()[i++] = message_body[r--];
         }
