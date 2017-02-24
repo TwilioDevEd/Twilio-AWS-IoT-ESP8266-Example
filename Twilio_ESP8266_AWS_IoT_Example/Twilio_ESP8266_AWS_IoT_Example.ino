@@ -71,7 +71,7 @@ int ssl_port = 443;
 extern SoftwareSerial swSer(13, 4, false, 256);
 Stream* serial_ptr = &swSer;
 #elif USE_HARDWARE_SERIAL == 1
-Stream* serial_ptr = Serial;
+Stream* serial_ptr = &Serial;
 #else
 Stream* serial_ptr = NULL;
 #endif
