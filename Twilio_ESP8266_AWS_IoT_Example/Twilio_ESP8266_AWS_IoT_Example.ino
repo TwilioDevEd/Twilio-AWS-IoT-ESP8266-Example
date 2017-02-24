@@ -50,7 +50,7 @@ char aws_region[]               = "IoT REGION";
 char* aws_endpoint              = "ENDPOINT FROM AWS IoT";
 const char* shadow_topic        = "$aws/things/YOUR_THING/shadow/update";
 
-/* Twilio Settings */
+/* Twilio Settings - First is a Twilio number, second your number. */
 char* your_device_number        = "+18005551212";
 char* number_to_text            = "+18005551212";
 char* your_sms_message          = "'RacecaR is a palindrome!";
