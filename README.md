@@ -5,10 +5,10 @@ An example application that demonstrates sending and receiving SMS and MMS Messa
 By default, the ESP8266 will account to an AWS IoT Account on the topic 'twilio' and send an SMS message.  It will then listen on that topic, and respond to any incoming messages with a return message inverting the message body.
 
 For a complete writeup, see these four articles on Twilio's documentation site where we'll take you from beginner to AWS ecosystem master:
-*
-*
-*
-*
+* https://www.twilio.com/docs/guides/receive-reply-sms-mms-messages-using-amazon-api-gateway-lambda
+* https://www.twilio.com/docs/guides/secure-amazon-lambda-python-app-validating-incoming-twilio-requests
+* https://www.twilio.com/docs/guides/reply-sms-messages-esp8266-amazon-aws-iot-lambda-and-api-gateway
+* https://www.twilio.com/docs/guides/send-sms-or-mms-messages-esp8266-amazon-aws-iot-lambda
 
 ## Build example:
 
