@@ -2,7 +2,7 @@
 
 /* 
  *  Only increase these if you have a need to listen to additional topics.
- *  Note our sever memory limitations.
+ *  Note our severe memory limitations.
  */
 const int maxMQTTpackageSize = 512;
 const int maxMQTTMessageHandlers = 2;
