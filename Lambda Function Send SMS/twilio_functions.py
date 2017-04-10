@@ -1,24 +1,20 @@
-"""
-Very simple example of how to send SMS or MMS messages as the middleman for
-AWS IoT Rules.
-
+"""Example of how to send SMS or MMS messages as a middleman for AWS IoT.
 
 When rules with type 'Outgoing' are posted in the 'twilio' topic, IoT will
 forward them to the iot_handler() function.  Here we demonstrate very basic
 sanity checks and (if valid) send an MMS or SMS for our IoT Device.
 """
-
 from __future__ import print_function
 
 import os
-from twilio.rest import TwilioRestClient
+from twilio.rest import Client
 
 
 def send_message(to_number, from_number, message_body, picture_url=""):
     """Wrap the Twilio Python library and send SMS/MMS messages."""
     auth_token = os.environ['AUTH_TOKEN']
     account_sid = os.environ['ACCOUNT_SID']
-    client = TwilioRestClient(account_sid, auth_token)
+    client = Client(account_sid, auth_token)
 
     message_dict = {}
     message_dict['to'] = to_number
