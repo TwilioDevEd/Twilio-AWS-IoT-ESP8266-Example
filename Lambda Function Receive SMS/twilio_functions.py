@@ -14,7 +14,7 @@ import json
 import os
 import boto3
 import urllib
-from twilio.util import RequestValidator
+from twilio.request_validator import RequestValidator
 
 
 def twilio_webhook_handler(event, context):
