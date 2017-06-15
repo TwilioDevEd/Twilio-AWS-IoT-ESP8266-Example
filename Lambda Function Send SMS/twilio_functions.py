@@ -23,7 +23,7 @@ def send_message(to_number, from_number, message_body, picture_url=""):
     if picture_url != "":
         message_dict['media_url'] = picture_url
 
-    # Send a SMS or MMS with Twilio!
+    # Send a SMS or MMS with Twilio!!!
     client.messages.create(**message_dict)
 
 
